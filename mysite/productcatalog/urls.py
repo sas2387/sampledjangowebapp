@@ -19,8 +19,7 @@ from productcatalog import views
 
 app_name = 'productcatalog'
 urlpatterns = [
-    url(r'^index', views.index, name="Index"),
+    url(r'^index', views.index, name="index"),
     url(r'^storeproduct', views.storeproduct ,name="Create Product"),
     url(r'^productlist', views.productlist ,name="Product List"),
-    url(r'^viewdetail/(?P<product_id>[0-9]+)/$', views.productdetail, name="Product Detail"),
 ]

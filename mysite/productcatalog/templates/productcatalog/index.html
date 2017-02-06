@@ -1,0 +1,11 @@
+<html>
+<body>
+<form method="POST" action="storeproduct">
+    {% csrf_token %}
+<input type="productname" name="name" placeholder="Product name" required/><br>
+<input type="productdescription" name="description" placeholder="Product description" required><br>
+<input type="submit" name="Submit" value="Add Product">
+</form>
+<a href="productlist">View Product List</a>
+</body>
+</html>
